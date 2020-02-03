@@ -1,0 +1,180 @@
+/*Setting default margins and padding for everything*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Settings for the nav bar's background*/
+header
+{
+    background-image:   linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                        url(NavBar.jpg);
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Setting up the nav bar links positions*/
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+
+}
+
+/*Changing the nav bar links to be horizontal instead of vertical*/
+.main-nav li
+{
+    display: inline-block;
+}
+
+/*Settings for the nav bar links*/
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Setting the active page link as being surrounded by a border*/
+.main-nav li.active a
+{
+    border: 1px solid white;
+    padding: 5px 49px;
+}
+
+/*Setting the hover effect for hovering on the nav bar links*/
+.main-nav li a:hover
+{
+    border: 1px solid white;
+    padding: 5px 49px;
+}
+
+/*Settings for the Baking Life Title for the top left corner*/ 
+.title
+{
+    float: left;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*Settings for the background picture of the body of the page*/ 
+body
+{
+    background-image:   linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                        url(MainPageBackground.jpg);
+    height: 2000px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Main Page welcome statement CSS Only*/
+.welcomeMP
+{
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+    font-size: x-large;
+}
+
+/*Every page but Main Page welcome statement CSS*/
+.welcomeElse
+{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: x-large;
+}
+
+/*General all table settings, collapsing the borders and rounding the corners*/
+table
+{
+    border-collapse: collapse;
+    border-radius: 25px;
+}
+
+/*Settings for the table of recipes on the Recipe Page*/
+.recipeTable
+{
+    margin-left: 6em;
+    margin-top: 2em;
+    font-size: 20px;
+}
+
+/*Recipe table specifics for the columns and the table cells*/
+.recipeTable th,
+.recipeTable td
+{
+    width: 20em;
+    padding: 15px 0.2vw;
+}
+
+/*Makes the body and not the head of the table a lighter gray*/
+.recipeTable tbody
+{
+    background-color: lightgray;
+}
+
+/*Makes the head and not the body of the table a darker gray*/
+.recipeTable thead
+{
+    background-color: rgb(73, 73, 73);
+}
+
+/*Recipe table specifics for the table head row*/
+.recipeTable thead tr
+{
+    text-align: left;
+    font-weight: bold;
+}
+
+/*Settings for the table for baking pics for the recipes, setting size*/
+.bakingPics
+{
+    margin-left: 20em;
+    margin-top: 2em;
+    width: 30em;
+    height: 30em;
+}
+
+/*Settings for the actual pictures inside the bakingPics table*/
+.bakingPics img
+{
+    align-content: center;
+    width: 25em;
+    height: 30em;
+}
+
+/*Settings for the text section of the News Page*/
+.newsVideos
+{
+    color: white;
+    padding: 25px;
+    font-size: 2em;
+}
+
+/*Settings for the text section of the About Us Page*/
+.aboutUs
+{
+    padding-top: 2em;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+/* Replacing the obsolete border attribute on the iframe html document to css equivalent */
+iframe
+{
+    border: 0;
+}
